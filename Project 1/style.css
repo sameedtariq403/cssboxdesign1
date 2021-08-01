@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+:root {
+    --box_bg_colour: rgb(224, 222, 222);
+    --box_content_colour: rgb(4, 171, 212);
+}
+
+
+
+.box {
+    width: 100%;
+    height: auto;
+    background-color: var(--box_bg_colour);
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.box .box_img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    transform: rotateY(0);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+
+.box:hover .box_img{
+    transform: rotateY(-90deg);
+
+}
+
+.box_img img {
+    width: 100%;
+    height: auto;
+}
+
+
+.box .box_content {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--box_content_colour);
+    transform: rotateY(90deg);
+    transition: all 0.5s ease-in-out 0s;
+
+}
+
+.box:hover .box_content{
+    transform: rotateY(0deg);
+}
+
+
+.box_content h1{
+    color: white;
+}
+.box_content p {
+    color: white;
+}
+
+
+/* End */
+
+
+
+
+
+
+
+
+.box2 {
+    width: 100%;
+    height: auto;
+    background-color: var(--box_bg_colour);
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.box2 .box2_img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    transform: rotateY(0);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+
+.box2:hover .box2_img{
+    transform: rotateY(180deg);
+
+}
+
+.box2_img img {
+    width: 100%;
+    height: auto;
+}
+
+
+.box2 .box2_content {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--box_content_colour);
+    transform: rotateY(-180deg);
+    transition: all 0.5s ease-in-out 0s;
+    backface-visibility: hidden;
+
+}
+
+.box2:hover .box2_content{
+    transform: rotateY(0deg);
+    visibility: visible;
+}
+
+
+.box2_content h1{
+    color: white;
+}
+.box2_content p {
+    color: white;
+}
+
+
+
+
+
